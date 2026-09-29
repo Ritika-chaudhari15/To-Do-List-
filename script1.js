@@ -26,7 +26,7 @@ function addtask() {
     <span class="edit-btn">Edit</span>
     <span class="delete-btn">Delete</span>
   `;
-  // textContent keeps user input from being treated as HTML
+  
   li.querySelector(".task-text").textContent = task;
   listcontainer.appendChild(li);
   inputbox.value = "";
@@ -61,7 +61,7 @@ function addtask() {
   updateCounters();
 }
 
-// Press Enter to add a task
+
 inputbox.addEventListener("keydown", function (e) {
   if (e.key === "Enter") addtask();
 });
